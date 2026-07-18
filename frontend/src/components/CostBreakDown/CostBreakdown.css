@@ -1,0 +1,75 @@
+.cost-card{
+
+    margin:50px 0;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+}
+
+.cost-card h2{
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+.cost-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+}
+
+.cost-item{
+
+    background:#111827;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.cost-item:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.cost-item svg{
+
+    font-size:32px;
+
+    color:#38BDF8;
+
+    margin-bottom:15px;
+
+}
+
+.cost-item span{
+
+    color:#94A3B8;
+
+}
+
+.cost-item h3{
+
+    margin-top:10px;
+
+    color:white;
+
+}

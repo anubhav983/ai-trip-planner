@@ -1,0 +1,49 @@
+.App{
+
+    min-height:100vh;
+
+    background:#f8fafc;
+
+}
+body{
+
+    margin:0;
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+    135deg,
+    #020617,
+    #0F172A,
+    #1E3A8A,
+    #2563EB
+    );
+
+    background-size:400% 400%;
+
+    animation:bgMove 15s ease infinite;
+
+}
+
+@keyframes bgMove{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}

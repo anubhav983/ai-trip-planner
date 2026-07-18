@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.trip-section{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:80px 7%;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top,#3B82F6 0%,#1E3A8A 35%,#0F172A 100%);
+
+}
+
+/* Decorative Glow */
+
+.trip-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:550px;
+
+    height:550px;
+
+    border-radius:50%;
+
+    background:rgba(59,130,246,.18);
+
+    top:-180px;
+
+    left:-150px;
+
+    filter:blur(60px);
+
+}
+
+.trip-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(6,182,212,.15);
+
+    bottom:-150px;
+
+    right:-120px;
+
+    filter:blur(70px);
+
+}
+
+.trip-card{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:1100px;
+
+    padding:55px;
+
+    border-radius:32px;
+
+    background:rgba(15,23,42,.72);
+
+    backdrop-filter:blur(24px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+
+    0 35px 80px rgba(0,0,0,.35);
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/* ================= HEADER ================= */
+
+.trip-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.trip-header h2{
+
+    font-size:58px;
+
+    font-weight:700;
+
+    color:white;
+
+    margin-bottom:18px;
+
+    line-height:1.2;
+
+}
+
+.trip-header p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:#CBD5E1;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+.ai-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    background:rgba(59,130,246,.18);
+
+    border:1px solid rgba(96,165,250,.45);
+
+    color:#7DD3FC;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+    box-shadow:
+
+    0 10px 30px rgba(37,99,235,.25);
+
+}
+
+@keyframes pulse{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.05);
+
+}
+
+}
+
+.trip-header h2{
+
+    color:#FFFFFF;
+
+    font-size:40px;
+
+    font-family:'Poppins',sans-serif;
+
+    margin-bottom:15px;
+
+}
+
+.trip-header p{
+
+    color:#CBD5E1;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+/* ================= CHIPS ================= */
+
+.chips{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.chip{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    background:#24539e;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.chip:hover{
+
+    transform:translateY(-4px);
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #06B6D4
+    );
+
+    box-shadow:
+    0 15px 35px rgba(37,99,235,.35);
+
+}
+
+/* ================= TEXTAREA ================= */
+
+.trip-card textarea{
+
+    width:100%;
+
+    height:250px;
+
+    resize:none;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:22px;
+
+    padding:25px;
+
+    background:#F8FAFC;
+
+    color:#0F172A;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    border:2px solid transparent;
+
+    transition:.35s;
+
+}
+
+.trip-card textarea:focus{
+
+    border-color:#3B82F6;
+
+    box-shadow:
+
+    0 0 25px rgba(59,130,246,.25);
+
+}
+
+.trip-card textarea::placeholder{
+
+    color:#64748B;
+
+}
+
+/* Scrollbar */
+
+.trip-card textarea::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.trip-card textarea::-webkit-scrollbar-thumb{
+
+    background:#2563EB;
+
+    border-radius:20px;
+
+}
+
+/* ================= BOTTOM ================= */
+
+.bottom{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.bottom span{
+
+    color:#94A3B8;
+
+    font-size:14px;
+
+}
+
+/* ================= BUTTON ================= */
+
+.generate-btn{
+
+    padding:18px 42px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #2563EB,
+
+    #06B6D4
+
+    );
+
+    transition:.35s;
+
+}
+
+.generate-btn:hover{
+
+    transform:
+
+    translateY(-4px)
+
+    scale(1.03);
+
+    box-shadow:
+
+    0 20px 45px
+
+    rgba(37,99,235,.45);
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.trip-card{
+
+padding:25px;
+
+}
+
+.trip-header h2{
+
+font-size:30px;
+
+}
+
+.trip-header p{
+
+font-size:15px;
+
+}
+
+.trip-card textarea{
+
+height:170px;
+
+}
+
+.bottom{
+
+flex-direction:column;
+
+align-items:stretch;
+
+}
+
+.generate-btn{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.trip-card{
+
+padding:20px;
+
+}
+
+.trip-header h2{
+
+font-size:25px;
+
+}
+
+.chip{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}

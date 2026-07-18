@@ -204,16 +204,6 @@ Frontend Response
 
 # 🚀 Installation
 
-## Clone Repository
-
-```bash
-git clone https://github.com/anubhav983/ai-trip-planner.git
-
-cd ai-trip-planner
-```
-
----
-
 # Backend Setup
 
 ```bash
@@ -309,63 +299,7 @@ Example
 }
 ```
 
----
 
-# Workflow
-
-```
-User Prompt
-      │
-      ▼
-React Frontend
-      │
-      ▼
-Express Backend
-      │
-      ▼
-Groq AI Model
-      │
-      ▼
-Structured JSON
-      │
-      ▼
-Response Validation
-      │
-      ▼
-Interactive Itinerary UI
-```
-
----
-
-# Current Functionality
-
-✔ AI Trip Generation
-
-✔ Destination Overview
-
-✔ Trip Summary
-
-✔ Weather Information
-
-✔ Estimated Cost
-
-✔ Flight Suggestion
-
-✔ Hotel Recommendation
-
-✔ Restaurant Recommendation
-
-✔ Packing Checklist
-
-✔ Travel Tips
-
-✔ Day-wise Timeline
-
-✔ Regenerate Individual Day
-
-✔ PDF Download
-
-✔ Responsive UI
 
 ---
 
@@ -384,8 +318,6 @@ Render
 # Author
 
 **Anubhav Tiwari**
-
-- GitHub: https://github.com/anubhav983
 
 ---
 

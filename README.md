@@ -1,6 +1,6 @@
 # 🌍 AI Trip Planner
 
-An AI-powered travel itinerary generator that creates personalized travel plans from natural language prompts. Users simply describe their trip requirements, and the application generates a complete itinerary including destination details, day-wise schedules, hotel recommendations, travel tips, estimated expenses, and more.
+An AI-powered travel itinerary generator that creates personalized travel plans from natural language prompts. Users simply describe their trip requirements, and the application generates a complete itinerary including destination details, day-wise schedules, travel tips, estimated expenses, and more.
 
 The application is built using the **MERN-style architecture (React + Node.js + Express)** and uses the **Groq Llama 3.3 70B Versatile** model to generate structured travel plans in JSON format.
 

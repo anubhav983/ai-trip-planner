@@ -14,7 +14,7 @@ app.use("/api/trip", tripRoutes);
 
 const PORT = process.env.PORT || 5000;
 
-console.log("API KEY:", process.env.Groq_API_KEY);
+console.log("API KEY:", process.env.GROQ_API_KEY);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

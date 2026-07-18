@@ -61,30 +61,6 @@ Provides estimated expenses for:
 
 ---
 
-## ✈ Flight Suggestion
-
-Shows:
-
-- Suggested route
-- Approximate airfare
-
----
-
-## 🏨 Hotel Recommendation
-
-Displays:
-
-- Hotel name
-- Price per night
-- Rating
-
----
-
-## 🍽 Restaurant Recommendations
-
-Suggests popular restaurants at the destination.
-
----
 
 ## 🎒 Packing Checklist
 
